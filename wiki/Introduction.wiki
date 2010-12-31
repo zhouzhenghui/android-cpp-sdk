@@ -160,7 +160,7 @@ void doRender(jobject gl10)
 
 }}}
 
-and for member fields:
+and with member fields:
 
 {{{
 using namespace j2cpp;
