@@ -101,8 +101,8 @@ my_project/jni/android_cpp_sdk_lib.cpp :
 
 For referencing java objects j2cpp library provides two reference classes:
 
- * local_ref< ClassType > : used for holding a local/stack reference to java object;
- * global_ref< ClassType > : used for holding a global reference to java object;
+ * {{{ local_ref< ClassType > }}} : used for holding a local/stack reference to java object;
+ * {{{ global_ref< ClassType > }}} : used for holding a global reference to java object;
 
 
 == Wrapping and using an existing instance of java class (jobject) ==
@@ -114,7 +114,7 @@ For simply using an existing instance of known java class, it is simple as :
 {{{
 using namespace j2cpp;
 
-void processModionEvent(jobject me)
+void processMotionEvent(jobject me)
 {
     android::view::MotionEvent motionEvent(me);
     jfloat meX=motionEvent.getX();
