@@ -138,11 +138,11 @@ local_ref<java::lang::String> newString2=java::lang::String(array<jbyte,1>("newS
 
 }}}
 
-== Using static and non-static fields ==
+== Working with static and member fields ==
 
 The library is designed to have a simple and logical syntax.
 
-Using a static field is as simple as:
+Working with static field is as simple as:
 
 {{{
 using namespace j2cpp;
@@ -160,6 +160,18 @@ void doRender(jobject gl10)
 
 }}}
 
+and for member fields:
+
+{{{
+using namespace j2cpp;
+
+void Polygon::append(jobject jp)
+{
+    android::graphics::Point point(jp);
+    m_points.push_back(Vertex(point.x,point.y));
+}
+
+}}}
 
 = Samples =
 
