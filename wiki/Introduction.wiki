@@ -178,4 +178,4 @@ void Polygon::append(jobject jp)
 Directory {{{ $(PATH_TO_ANDROID_CPP_SDK)/samples }}} contains two working samples of how to use the library:
 
  * j2cppTest : very first sample;
- * j2cppCameraTest : sample that opens the camera and draws the preview frames using OpenGL ES also shows how to manualy add new java classes ( CameraTest );
+ * j2cppCameraTest : sample that opens the camera and draws the preview frames using OpenGL ES also shows how to manualy add new java classes ( {{{ com.j2cpp.CameraTest }}} );
