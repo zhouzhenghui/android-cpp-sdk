@@ -8,7 +8,7 @@ class NameSpaceWrapper:
         fileObject.write("\n")
         
     def __del__(self):
-        for x in xrange(0, self.bracketsCount):
+        for x in range(0, self.bracketsCount):
             self.fileObject.write("}")
         self.fileObject.close()
        

@@ -36,7 +36,7 @@ def RecreateDirectorySrtuct(pathesList, dirName):
                 try:
                     os.mkdir(root)
                 except:
-                    print "failed to create : " + str(root)
+                    print("failed to create : " + str(root))
 
 def ReadEntireFile(path):
     f = open(path, 'r')

@@ -41,12 +41,13 @@ def TranslateFolder(dirToTranslateFrom, dirToTranslateTo):
                 TranslateFile(fileToTranslateFrom, fileToTranslateTo)
 
 def Help():
-    print "To start the script pleace specify the:"
-    print "1. Path to directory with android sources"
-    print "2. Path to output directory"
+    print("To start the script pleace specify the:")
+    print("1. Path to directory with android sources")
+    print("2. Path to output directory")
 
 
 def main():
+
     args = sys.argv
 #    print BuildClassTree(ReadEntireFile("D:\\2commit\\New folder\\android\\app\\ActivityGroup.java"))
 #    if len(args) < 3:
